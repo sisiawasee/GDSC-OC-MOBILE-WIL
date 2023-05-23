@@ -16,7 +16,8 @@
     - onPressed에만 카운트를 시작해야 하므로 -> setState 설정 외에도 onPausePressed() method 구현
   * Data Format: Pomodoro를 완료한 숫자 추가
     - onTick이 0이 되면 다시 카운터를 중지하고 1500으로 초기화
-    - 
+    - 분/초로 나눠 보여주기 위한 format 메소드->second을 받아 duration class에 삽입, stirng split으로 사용
+  * Code Challenge
 1. DART 시작하기 #4 CLASSES ½ (~#4.5)
   * 생성자(constructor) 
     - 함수와 같이 named/positional로 구분됨
@@ -26,4 +27,4 @@
 * * *
 [Q1.] setState가 UI에만 영향을 미치는 UI 업데이트 메소드가 아니라 실제로 다른 메소드 실행 여부에도 영향을 주는 건가요? isRunning이 setState에 의해서 true로 바뀌는 것이 살짝 헷갈립니다. 즉, 실제 변수값->UI 영향 뿐 아니라 UI->변수값으로도 영향을 주는 걸까요?
 
-[Q2.] 
+[Q2.] print는 화면에 print 되지 않고 디버깅 콘솔에서만 작동하는 것으로 이해했는데 맞을까요?
