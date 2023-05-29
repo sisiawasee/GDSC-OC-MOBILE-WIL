@@ -33,6 +33,10 @@
   * Hero: HeroWidget->애니메이션을 통한 화면 전환, 원래 화면의 위젯을 노출시킴, tag 사용
   * ApiService: API 이전과 같은 내용 json으로 받아오기
   * Futures: 초기화 property, late 주의 ->다른 위젯으로부터 argument 받아오기
+  * Detail Info: (UI 제작) FutureBuilder로 snapshot 받아서 sanpshot.hasData로-> 데이터 받아오기
+  * Episodes: Overflow시 singleChildScrollView로 감싸기
+  * Url Launcher: 브라우저에서 Url 열기->url_launcher 패키지 설치
+    - 버튼에 GestureDetector 추가 후 async await 사용해 올바른 URL 열기(launchUrlString 또는 launchUrl 등 사용)
 1. DART 시작하기 #4 CLASSES complete (#4.6~)
   * Enum: 타입에 포함되는 일종의 변수 생성(ex: Enum team(){blue, red})
   * abstract class: 추상화 클래스 ->상속받는 클래스가 어떤 메소드를 갖고 있어야 하는지 강제함
