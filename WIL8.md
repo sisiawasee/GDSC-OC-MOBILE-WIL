@@ -14,6 +14,14 @@
     - webtoon class의 proprerty: title, thumb, id-> constructor 선언
     - jsonDecode 함수 사용: string으로 입력, dynamic 타입으로 반환 -> 리스트로 나눠서 입력받기
   * waitForWebToons: 웹툰에 대한 내용을 console이 아닌 화면에 출력하기 (await, initState override 등)
+  * FutureBuilder: statelessWidget을 이용하여 API data fetch하기
+    - Future class 이용(지난 시간에 만들어 놓은 class): build 메소드에 future 전달 ->FutureBuilder widget 이용
+    - FutureBuilder: builder 매개변수->UI를 그려줌, initial Data, Future 전달(await 불필요)
+    - snapshot: Future의 상태 catch->변화 여부 return -> 비동기 위젯을 사용하여 stateless 위젯 유지
+  * ListView: FutureBuilder에서 ListView 반환
+    - ListView: 많은 양의 데이터와 항목을 나열하는 위젯, 자동으로 scrollview 생성
+    - 최적화 ListView=Listview.builder: 스크롤 방향 등 선택의 폭이 넓어짐, 아이템 개수 설정 가능, build 함수로 아이템 인덱스에 접근
+    - listView.sperated: 리스트+구분자 반환
 1. DART 시작하기 #4 CLASSES complete (#4.6~)
   * Enum: 타입에 포함되는 일종의 변수 생성(ex: Enum team(){blue, red})
   * abstract class: 추상화 클래스 ->상속받는 클래스가 어떤 메소드를 갖고 있어야 하는지 강제함
