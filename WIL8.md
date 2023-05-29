@@ -31,7 +31,8 @@
     - 새로운 스크린 페이지 등록(StatelessWidget) ->클릭 시 해당 웹툰 정보 노출: 위젯을 실제 화면처럼 구현
     - Navigator: push route-> StatelessWidget X MeterialPage Route-> 다른 스크린처럼 보여줌, builder를 통해 route 만들기 (builder:(context)=>함수())
   * Hero: HeroWidget->애니메이션을 통한 화면 전환, 원래 화면의 위젯을 노출시킴, tag 사용
-  * ApiService: API 이전과 같은 내용 json으로 받아오기->
+  * ApiService: API 이전과 같은 내용 json으로 받아오기
+  * Futures: 초기화 property, late 주의 ->다른 위젯으로부터 argument 받아오기
 1. DART 시작하기 #4 CLASSES complete (#4.6~)
   * Enum: 타입에 포함되는 일종의 변수 생성(ex: Enum team(){blue, red})
   * abstract class: 추상화 클래스 ->상속받는 클래스가 어떤 메소드를 갖고 있어야 하는지 강제함
