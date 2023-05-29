@@ -22,6 +22,15 @@
     - ListView: 많은 양의 데이터와 항목을 나열하는 위젯, 자동으로 scrollview 생성
     - 최적화 ListView=Listview.builder: 스크롤 방향 등 선택의 폭이 넓어짐, 아이템 개수 설정 가능, build 함수로 아이템 인덱스에 접근
     - listView.sperated: 리스트+구분자 반환
+  * Webtoon Card
+    - extract method->builder의 반환 동작을 method로 분리하기
+    - expanded: 화면의 남는 공간을 차지하는 widget ->무한한 높이 제한, child를 확장하여 남는 공간을 채움
+    - image.network(이미지 링크), clipBehavior로 부모 영역 침범 제한
+  * Detail Screen: GestureDetector->동작 감지
+    - onTap: 버튼 클릭 감지->새 함수 등록
+    - 새로운 스크린 페이지 등록(StatelessWidget) ->클릭 시 해당 웹툰 정보 노출: 위젯을 실제 화면처럼 구현
+    - Navigator: push route-> StatelessWidget X MeterialPage Route-> 다른 스크린처럼 보여줌, builder를 통해 route 만들기 (builder:(context)=>함수())
+  * 
 1. DART 시작하기 #4 CLASSES complete (#4.6~)
   * Enum: 타입에 포함되는 일종의 변수 생성(ex: Enum team(){blue, red})
   * abstract class: 추상화 클래스 ->상속받는 클래스가 어떤 메소드를 갖고 있어야 하는지 강제함
