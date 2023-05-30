@@ -37,6 +37,9 @@
   * Episodes: Overflow시 singleChildScrollView로 감싸기
   * Url Launcher: 브라우저에서 Url 열기->url_launcher 패키지 설치
     - 버튼에 GestureDetector 추가 후 async await 사용해 올바른 URL 열기(launchUrlString 또는 launchUrl 등 사용)
+  * Favorites: 휴대폰 저장소에 데이터 담기 ->shared_preferences 패키지 설치
+    - 휴대폰 저장소와 connection 생성, getInstance->자료형 등 설정 가능
+    - ID를 리스트로 저장해 리스트에 있으면 버튼에 반영: 새로운 클래스 지정 후 초기화 시 getInstance()하기
 1. DART 시작하기 #4 CLASSES complete (#4.6~)
   * Enum: 타입에 포함되는 일종의 변수 생성(ex: Enum team(){blue, red})
   * abstract class: 추상화 클래스 ->상속받는 클래스가 어떤 메소드를 갖고 있어야 하는지 강제함
