@@ -55,3 +55,5 @@
 [Q1.] future은 타입명이 아니라 final 같은 타입 수식어의 개념이라고 생각하면 될까요?
 
 [Q2.] GestureDetector 위젯에서  Navigator.push 메소드를 사용할 때 새로 로딩된 카드 화면을 끄거나(X) 이전 화면으로 돌아갈 때(<) 나오는 아이콘을 바꿀 수도 있을까요?
+
+[Q3.] GestureDetector 위젯을 이용하여 보더콜리 사진 노출 시 좋아요 기능을 추가해 좋아요를 누르면 하트 아이콘만 뜨고, 좋아요를 누르지 않았을 때는 사진이 뜨게 하고 싶은데, isLiked bool 변수를 추가해서 onTap과 setState 메소드를 사용하면 오류가 뜹니다. image에는 child가 없어서 index로 구분을 해야할 것 같은데, random이라 API json에도 딱히 ID나 식별자가 없는 것 같아 고민입니다. 어떻게 해야 할까요?
